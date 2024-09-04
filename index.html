@@ -8,10 +8,10 @@
   <script>
     function sendMessage() {
       console.log("클릭 잘 됨");
-      Channel.postMessage({
+      Channel.postMessage(JSON.stringify({
         "result": "ok",
         "message": "Hello"
-      });
+      }));
     }
   </script>
 </head>
