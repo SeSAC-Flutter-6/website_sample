@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function sendMessage() {
+      console.log("클릭 잘 됨");
+      Channel.postMessage({
+        "result": "ok",
+        "message": "Hello"
+      });
+    }
+  </script>
+</head>
+
+<body>
+  <button onclick="sendMessage()">버튼</button>
+</body>
+
+</html>
